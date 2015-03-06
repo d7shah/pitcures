@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :registrations
+
+  get 'download/png'
+
   resources :cities
 
   resources :landscapes
