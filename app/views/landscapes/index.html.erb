@@ -1,6 +1,70 @@
-<p id="notice"><%= notice %></p>
+<!DOCTYPE HTML>
+<html>
 
-<h1>Listing Landscapes</h1>
+
+
+
+<head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="cities.css"  media="screen,projection"/>
+     <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    
+  
+  <!-- <link rel="icon" 
+        type="image/png" 
+        href="img/five.png">  This is where our favicon will go-->
+  <title> Cities </title>
+
+
+
+
+</head>
+
+<style>
+  
+.right hide-on-med-and-down{
+  padding-top: 30px;
+}
+
+</style>
+
+
+<body>
+
+
+  <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    <script type = "text/javascript"> 
+      // Initialize collapse button
+    $(".button-collapse").sideNav();
+    // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+    //$('.collapsible').collapsible();</script>
+
+
+<ul id="dropdown1" class="dropdown-content">
+      <li><%= link_to "City", cities_path %></li>
+      <li><%= link_to "Landscape", landscapes_path %></li>
+      <li class="divider"></li>
+      
+</ul>
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "How it works", work_index_path %></li>
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Category<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+<h1>Landscapes</h1>
 
 <table>
   <thead>
@@ -21,26 +85,162 @@
 </table>
 
 <br>
+         
+<div class = "container">
 
-<%= link_to 'New Landscape', new_landscape_path %>
-<p><%= link_to "Home", root_path %></p>
+    <div class = "row">
+      <div class="col s4">
+          <!-- Promo Content 1 goes here -->
 
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-  <input type="hidden" name="cmd" value="_xclick">
-  <input type="hidden" name="business" value="dhrutishah10@gmail.com">
-  <input type="hidden" name="lc" value="US">
-  <input type="hidden" name="item_name" value="First painting">
-  <input type="hidden" name="amount" value="12.00">
-  <input type="hidden" name="currency_code" value="USD">
-  <input type="hidden" name="button_subtype" value="services">
-  <input type="hidden" name="no_note" value="0">
-  <input type="hidden" name="tax_rate" value="10.000">
-  <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_LG.gif:NonHostedGuest">
-  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            <div class="card">
+                <div class="card-image">
+                  <img  class = "z-depth-4" src="materialize/img/c.jpg">
+                  <span class="card-title">Card Title</span>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <%= link_to 'Download', new_registration_path %>
+                
+                </div>
+            </div>
+
+          </div>
+        <div class="col s4">
+            <!-- Promo Content 2 goes here -->
+            <div class = "card">
+              <div class="card-image">
+                  <img  class = "z-depth-4" src="materialize/img/c.jpg">
+                  <span class="card-title">Card Title</span>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                 <%= link_to 'Download', new_registration_path %>
+                 
+                </div>
+              </div>
+        </div>
+
+      <div class="col s4">
+          <!-- Promo Content 3 goes here -->
+          <div class = "card">
+              <div class="card-image">
+                  <img  class = "z-depth-4" src="materialize/img/c.jpg">
+                  <span class="card-title">Card Title</span>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <%= link_to 'Download', new_registration_path %>
+                  
+                </div>
+              </div>
+
+      </div>  
+    </div>
+
+    <div class = "row">
+      <div class="col s4">
+          <!-- Promo Content 1 goes here -->
+          <div class = "card">
+              <div class="card-image">
+                  <img class = "z-depth-4" src="materialize/img/c.jpg">
+                  <span class="card-title">Card Title</span>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <%= link_to 'Download', new_registration_path %>
+                 
+                </div>
+              </div>
+
+          </div>
+        <div class="col s4">
+            <!-- Promo Content 2 goes here -->
+            <div class = "card">
+              <div class="card-image">
+                  <img  class = "z-depth-4" src="materialize/img/c.jpg">
+                  <span class="card-title">Card Title</span>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                 <%= link_to 'Download', new_registration_path %>
+                 
+                </div>
+              </div>
+
+        </div>
+      <div class="col s4">
+          <!-- Promo Content 3 goes here -->
+          <div class = "card">
+              <div class="card-image">
+                  <img class = "z-depth-4"  src="materialize/img/c.jpg">
+                  <span class="card-title">Card Title</span>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <%= link_to 'Download', new_registration_path %>
+                  
+                </div>
+              </div>
+
+      </div>  
+    </div>
+
+  </div>
+    
+    
+</body>
+
+
+
+<footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_donations">
+<input type="hidden" name="business" value="dhrutishah10@gmail.com">
+<input type="hidden" name="lc" value="US">
+<input type="hidden" name="no_note" value="0">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            
+            
+            </div>
+          </div>
 
-<p><%= link_to 'Download', new_registration_path %><p>
+
+</footer>
 
 
 
+<html>
