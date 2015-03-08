@@ -28,6 +28,7 @@ class RegistrationsController < ApplicationController
 
     respond_to do |format|
       if @registration.save
+         UserMailer.thanks_email(@registration).deliver
         format.html { redirect_to download_png_path}
         format.json { render :show, status: :created, location: @registration }
       else
