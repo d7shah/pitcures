@@ -336,10 +336,12 @@ jQuery.extend( jQuery.easing,
   };
 
   $(document).ready(function(){
+  	$('.parallax').parallax();
     $('.collapsible').collapsible();
     $(".dropdown-button").dropdown();
     $(".button-collapse").sideNav();
-    $('.slider').slider({full_width: true, interval:2000});
+    
+
 
   });
 

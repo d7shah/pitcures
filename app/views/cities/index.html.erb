@@ -48,9 +48,9 @@
 
 
 
-<h1>Cities</h1>
+<!--<h1>Cities</h1> -->
 
-<table>
+<!--<table>
   <thead>
     <tr>
       <th colspan="3"></th>
@@ -66,9 +66,34 @@
       </tr>
     <% end %>
   </tbody>
-</table>
+</table> -->
+<ul id="dropdown1" class="dropdown-content">
+      <li><%= link_to "City", cities_path %></li>
+      <li><%= link_to "Landscape", landscapes_path %></li>
+      <li class="divider"></li>
+      
+</ul>
 
-<br>
+  <nav>
+    <div class="nav-wrapper cyan">
+      <a href="#!" class="brand-logo white-text">PicSite</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a> 
+      <ul class="right hide-on-med-and-down">
+        <li><%= link_to "Home", root_path, :class => 'white-text' %></li>
+    
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-button white-text" href="#!" data-activates="dropdown1">Category</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+         <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "How it works", work_index_path %></li>
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Category</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<br> 
          
 
   <div class = "container">
@@ -79,12 +104,11 @@
 
             <div class="card">
                 <div class="card-image">
-                  <img  class = "z-depth-4" src="materialize/img/c.jpg">
-                  <span class="card-title">Card Title</span>
+                  <img  class = "z-depth-4" src="http://s24.postimg.org/xhqr21vs5/city1.jpg">
+                  
                 </div>
                 <div class="card-content">
-                  <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
+                  <p>Toronto</p>
                 </div>
                 <div class="card-action">
                   <%= link_to 'Download', new_registration_path %>
@@ -97,12 +121,11 @@
             <!-- Promo Content 2 goes here -->
             <div class = "card">
               <div class="card-image">
-                  <img  class = "z-depth-4" src="materialize/img/c.jpg">
-                  <span class="card-title">Card Title</span>
+                  <img  class = "z-depth-4" src="http://s30.postimg.org/5yfo9n0o1/city2.jpg">
+                
                 </div>
                 <div class="card-content">
-                  <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
+                  <p>Toronto</p>
                 </div>
                 <div class="card-action">
                  <%= link_to 'Download', new_registration_path %>
@@ -115,12 +138,11 @@
           <!-- Promo Content 3 goes here -->
           <div class = "card">
               <div class="card-image">
-                  <img  class = "z-depth-4" src="materialize/img/c.jpg">
-                  <span class="card-title">Card Title</span>
+                  <img  class = "z-depth-4" src="http://s17.postimg.org/mm6g1ixrz/city3.jpg">
+                  
                 </div>
                 <div class="card-content">
-                  <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
+                  <p>Chicago</p>
                 </div>
                 <div class="card-action">
                   <%= link_to 'Download', new_registration_path %>
@@ -136,12 +158,11 @@
           <!-- Promo Content 1 goes here -->
           <div class = "card">
               <div class="card-image">
-                  <img class = "z-depth-4" src="materialize/img/c.jpg">
-                  <span class="card-title">Card Title</span>
+                  <img class = "z-depth-4" src="http://s1.postimg.org/bs6n2bj4v/city4.jpg">
+                  
                 </div>
                 <div class="card-content">
-                  <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
+                  <p>Toronto</p>
                 </div>
                 <div class="card-action">
                   <%= link_to 'Download', new_registration_path %>
@@ -154,12 +175,11 @@
             <!-- Promo Content 2 goes here -->
             <div class = "card">
               <div class="card-image">
-                  <img  class = "z-depth-4" src="materialize/img/c.jpg">
-                  <span class="card-title">Card Title</span>
+                  <img  class = "z-depth-4" src="http://s13.postimg.org/8wpgiahef/city5.jpg">
+                 
                 </div>
                 <div class="card-content">
-                  <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
+                  <p>Toronto</p>
                 </div>
                 <div class="card-action">
                  <%= link_to 'Download', new_registration_path %>
@@ -172,12 +192,11 @@
           <!-- Promo Content 3 goes here -->
           <div class = "card">
               <div class="card-image">
-                  <img class = "z-depth-4"  src="materialize/img/c.jpg">
-                  <span class="card-title">Card Title</span>
+                  <img class = "z-depth-4"  src="http://s23.postimg.org/fagu4ozxn/city7.jpg">
+                  
                 </div>
                 <div class="card-content">
-                  <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
+                  <p>Toronto</p>
                 </div>
                 <div class="card-action">
                   <%= link_to 'Download', new_registration_path %>
@@ -194,12 +213,12 @@
 
 
 
-<footer class="page-footer">
+<footer class="page-footer cyan">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                <h5 class="white-text">Help PicSite Grow</h5>
+                <p class="grey-text text-lighten-4">Donate to help PicSite grow</p>
               </div>
               <div class="col l4 offset-l2 s12">
                      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -215,7 +234,7 @@
               </div>
             </div>
           </div>
-          <div class="footer-copyright">
+          <div class="footer-copyright cyan">
             <div class="container">
             
             
