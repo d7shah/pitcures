@@ -1,14 +1,53 @@
-	<div class ="container">
+	   <nav>
+    <div class="nav-wrapper lime">
+      <a href="#!" class="brand-logo white-text">PicSite</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a> 
+      <ul class="right hide-on-med-and-down">
+        <li><%= link_to "Home", root_path, :class => 'white-text' %></li>
+    
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-button white-text" href="#!" data-activates="dropdown1">Category     </a></li>
+        
+        
+        <!-- Dropdown Trigger 
+  <a class='dropdown-button btn' href='#' data-activates='dropdown1'> Category</a> -->
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><%= link_to "City", cities_path %></li>
+      <li><%= link_to "Landscape", landscapes_path %></li>
+    <li class="divider"></li>
+    
+  </ul> 
+      <li class="divider"></li>
+      </ul> 
+      <ul class="side-nav" id="mobile-demo">
+         <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "How it works", work_index_path %></li>
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Category</a></li>
+        <li><%= link_to "City", cities_path %></li>
+      <li><%= link_to "Landscape", landscapes_path %></li>
+      <li class="divider"></li>
+      </ul>
+    </div>
+  </nav>
+
+<div class ="container">
     <div class="rower">
       <div class="col s12 m5">
         <div class="card-panel teal">
           <span class="black-text">
           <%= render 'form' %>
+            
+            
         </div>
       </div>
+        <%=link_to 'Back', landscapes_path %>
     </div>
+      
     </div> 
 
 
 
-<%=link_to 'Back', landscapes_path %>
+
