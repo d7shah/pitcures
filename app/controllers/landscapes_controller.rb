@@ -10,6 +10,8 @@ class LandscapesController < ApplicationController
   # GET /landscapes/1
   # GET /landscapes/1.json
   def show
+    
+     
   end
 
   # GET /landscapes/new
