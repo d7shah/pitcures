@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   resources :cities, only: [:index, :new, :create, :show]
 
-  resources :landscapes, except: [:destroy, :edit, :update]
+  resources :landscapes, except: [:destroy, :edit]
 
   resources :pictures, only: :index
 
