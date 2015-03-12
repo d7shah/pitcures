@@ -3,11 +3,11 @@ Rails.application.routes.draw do
 
   get 'download/png'
 
-  resources :cities
+  resources :cities, only: [:index, :new, :create, :show]
 
-  resources :landscapes
+  resources :landscapes, except: [:destroy, :edit, :update]
 
-  resources :pictures
+  resources :pictures, only: :index
 
   resources :work
 
